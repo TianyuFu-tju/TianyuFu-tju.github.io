@@ -11678,6 +11678,51 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
+@font-face {
+  font-family: 'Source Han Serif VF';
+  src: url("/fonts/SourceHanSerifSC-VF.ttf") format('truetype-variations');
+  font-weight: 1 999;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'Source Han Serif VF', serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-variation-settings: 'wght' 700;
+}
+.content h1 {
+  color: #3498db;
+}
+article .title {
+  font-weight: 700 !important;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+  color: #4c6cb3;
+}
+.card.widget[data-type="profile"] {
+  background: linear-gradient(145deg, #f0f8ff 0%, #e6f4ff 50%, #cce5ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  color: #333;
+}
+.card.widget[data-type="links"] {
+  background: linear-gradient(145deg, #f0f8ff 0%, #e6f4ff 50%, #cce5ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  color: #333;
+}
+.card {
+  background: linear-gradient(145deg, #f0f8ff 0%, #e6f4ff 80%, #cce5ff 100%);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  color: #333;
+}
 body {
   counter-reset: card;
 }
