@@ -1,0 +1,17 @@
+/* 全屏静态背景 */
+body {
+  background: url(/images/YQ_1.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+/* 深色遮罩层（提高文字可读性） */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* 透明度调整 */
+  z-index: -1;
+}
