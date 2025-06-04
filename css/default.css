@@ -11009,6 +11009,22 @@ footer.footer .level-end .field {
 .footer-logo img {
   max-height: 1.75rem;
 }
+.navbar {
+  background: linear-gradient(135deg, #fff 0%, #f0fbff 40%, #e6f7ff 100%) !important;
+  box-shadow: 0 2px 10px rgba(0,105,210,0.1) !important;
+}
+.navbar .navbar-item,
+.navbar .navbar-link {
+  color: #2c3e50 !important;
+}
+.navbar .navbar-item:hover,
+.navbar .navbar-link:hover {
+  color: #3498db !important;
+  background: rgba(255,255,255,0.2) !important;
+}
+.navbar-menu {
+  background: linear-gradient(135deg, #fff, #e6f7ff 100%) !important;
+}
 .pagination {
   margin-top: 1.5rem;
 }
@@ -11745,5 +11761,26 @@ article .title {
 @media (max-width: 768px) {
   body::before {
     background-attachment: scroll !important;
+  }
+  .columns {
+    flex-direction: column;
+  }
+  .column-main {
+    order: 1;
+    width: 100% !important;
+  }
+  .column-left {
+    order: 2;
+    width: 100% !important;
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .column-left .card.widget[data-type="profile"] {
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+  .column-left .card:not([data-type="profile"]) {
+    order: 1;
   }
 }
