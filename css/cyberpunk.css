@@ -11694,6 +11694,11 @@ figure.highlight.foldable div.level-left {
     padding: 1.5rem 1rem;
   }
 }
+hr {
+  border: 0;
+  border-top: 1px solid #0056b3;
+  margin: 1rem 0;
+}
 @font-face {
   font-family: 'Source Han Serif VF';
   src: url("/fonts/SourceHanSerifSC-VF.ttf") format('truetype-variations');
