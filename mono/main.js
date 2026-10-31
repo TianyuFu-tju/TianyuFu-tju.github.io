@@ -99,6 +99,6 @@
         });
       });
     }, {rootMargin: '-15% 0px -50% 0px'});
-    document.querySelectorAll('.section[id]').forEach(section => observer.observe(section));
+    document.querySelectorAll('.section[id], .contact-section[id]').forEach(section => observer.observe(section));
   }
 })();
